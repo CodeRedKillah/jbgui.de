@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<head>
+<link rel="shortcut icon" href="https://i.vgy.me/KY96Du.png">
+<link rel="stylesheet" type="text/css" href="../css/articles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="apple-touch-icon" href="https://i.vgy.me/IVzE8H.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+
+</head>
+
+<body>
+<div class="article-container">
+
+    <div class="article-top">
+
+      <div class="columns">
+
+        <div class="column">
+
+          <div class="intro">
+
+            <p class="big-title">Article Title</p>
+            <p class="big-title-subtitle">Article Subtitle</p>
+            <br>
+            <br>
+            <div class="sections-list">
+              <p class="article-subtitle">Sections</p>
+              <ul>
+
+                <li><a class="section-list-item" href="#s1">Section 1
+                  </a></li>
+                <li><a class="section-list-item" href="#s2">Section 2
+                  </a></li>
+                <li><a class="section-list-item" href="#s3">Section 3
+                  </a></li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="column">
+
+          <div class="promo-image">
+
+            <br>
+            <img src="../img/tpromo.png" alt="Promoimg">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="article-maintext">
+
+      <div id="s1">
+        <p class="article-subtitle">Section 1</p>
+          <br>
+        <p class="article-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br>
+      </div>
+
+      <div id="s2">
+        <p class="article-subtitle">Section 2&nbsp;</p>
+        <br>
+        <p class="article-text">
+        In stet referrentur mea. Per oporteat referrentur ei, pro id alia nobis, id wisi animal intellegebat vix. Qui imperdiet expetendis ex, verear verterem in vim. Vis ei epicuri omnesque expetenda, an mea graecis constituto conclusionemque, quo ad tation labore. Sit congue convenire ne. Tempor regione suavitate cu mea, an eius suscipit vix. Omittam contentiones est cu, no pri movet saperet invenire.</p>
+          <br>
+      </div>
+
+      <div id="s3">
+        <p class="article-subtitle">Section 3&nbsp;</p>
+        <br>
+        <p class="article-text">Sea in quidam accommodare, est elitr verterem an. Te qui putent fuisset, ne errem possim sea, eam invenire abhorreant adversarium id. Dico voluptua elaboraret ex eos, est te ceteros mandamus reprimique. Ex vel atqui accommodare concludaturque, sententiae vituperatoribus pri in. Aeque inciderint ad pri.</p>
+      </div>
+    </div>
+
+  </div>
+    </body>

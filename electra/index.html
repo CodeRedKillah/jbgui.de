@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+
+<html><head>
+<link rel="shortcut icon" href="https://i.vgy.me/KY96Du.png">
+<link rel="stylesheet" type="text/css" href="../css/articles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="apple-touch-icon" href="https://i.vgy.me/IVzE8H.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Electra - Jailbreak Guides">
+<meta property="og:description" content="Helpful, open source guides relating to iOS jailbreaking.">
+<meta property="og:url" content="https://jbgui.de">
+<meta property="og:image" content="https://i.vgy.me/IVzE8H.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <br>
+
+    <nav class="navbar is-fixed-top" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://jbgui.de">
+        <img src="../img/logo.png" width="240" height="29" alt="JailbreakGuides">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="https://jbgui.de/unc0ver/">
+          unc0ver
+        </a>
+        <a class="navbar-item" href="https://jbgui.de/chimera">
+          Chimera
+        </a>
+        <a class="navbar-item" href="https://jbgui.de/packagemanagers">
+          Package Managers
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://jbgui.de/electra">
+              Electra
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/legacy">
+              Legacy
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/other">
+              Other
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+      </div>
+        </div>
+  </nav>
+  <hr class="navbar-hr">
+
+  <br>
+  <div class="article-container">
+
+    <div class="article-top">
+
+      <div class="columns">
+
+        <div class="column">
+
+          <div class="intro">
+
+            <p class="big-title">Electra</p>
+            <p class="big-title-subtitle">Jailbreak for iOS 11.0 - 11.4.1</p>
+            <br>
+            <br>
+            <div class="sections-list">
+              <p class="article-subtitle">Sections</p>
+              <ul>
+
+                <li><a class="section-list-item" href="#comparison">Electra or unc0ver?
+                  </a></li>
+                <li><a class="section-list-item" href="#install-pc">Installation (with computer)
+                  </a></li>
+                <li><a class="section-list-item" href="#install-nopc">Installation (no computer)
+                  </a></li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="column">
+
+          <div class="promo-image">
+            <br>
+            <img src="../img/electra/electra-promo.png" alt="electra">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" article-maintext">
+
+      <div id="comparison">
+        <p class="article-subtitle">Electra or unc0ver?</p>
+        &nbsp;
+        <p> If you're looking to jailbreak with Electra, you must know that it uses <a>Substitute</a> instead of <a>Substrate</a> and requires you to use <a href="https://jbgui.de/packagemanagers/sileo">Sileo</a> over <a>Cydia.</a>&nbsp;</p>
+        &nbsp;
+
+        <br>
+        <p class="article-text">We recommend you use <a href="https://jbgui.de/unc0ver">unc0ver</a> on iOS 11 because it has advantages over
+          Electra. Those advantages include more kernel <a
+            href="https://en.wikipedia.org/wiki/Exploit_(computer_security)">exploits</a>, descriptive errors, more
+          settings, and a log.<br>
+          <br>
+          If you choose unc0ver, you have two options. unc0ver by pwn20wnd, or unc0ver dark, a fork of unc0ver made by
+          Diatrus and Shady. For a comparison of the two, refer to <a href="https://jbgui.de/unc0ver/#comparison">our
+        unc0ver guide.</a><br>
+        </p>
+        <br>
+
+        <br>
+      </div>
+
+      <div id="install-pc">
+        <p class="article-subtitle">Installation (with computer)</p>
+        <br>
+        <p class="article-text">
+          This is the preferred method of installing jailbreak apps onto one's device, but
+          there is a method to do it without a computer if needed. If you <em>have</em> a computer, then read on.
+        </p>
+        <br>
+        <p>To get started, you'll need to install <a>Cydia Impactor</a> on your
+          computer. Simply click the link and install it like any other program. Next, you will need the ipa for Electra
+          from <a href="https://coolstar.org/electra">Coolstar's website.</a> Once you have it downloaded, plug your device into your computer, open
+          Impactor and check if your device is seen. It should show as <code>&lt;Device Name&gt; [&lt;UUID&gt;]</code>.</p>
+        <br>
+        <p> Then, go to the menu and choose Device --&gt; Install Package. A file browser should open. Select the ipa for Electra, then follow the instructions. If you run into any errors after entering your Apple ID, read <a href="https://jbgui.de/other/software/impactor">our page</a> on Impactor.</p>
+        <br>
+      </div>
+
+      <div id="install-nopc" style="padding-top:70px;">
+
+        <p class="article-subtitle">Installation (without computer)</p>
+        <br>
+        <p class="article-text"><b>Note: This method is only successful when a signing service has a valid
+            certificate.</b></p>
+        <br>
+        <p class="article-text">On your apple device, navigate to <a href="https://jailbreaks.fun">jailbreaks.fun</a> in Safari. Scroll down untill you find Electra1141. Tap on it, then press the blue "GET" button. <br>
+          <br>
+          After waiting a few seconds a popup should appear asking you if you want to install it. Press install. In a few seconds the app should be on your home screen. <br>
+  <br>
+          Before you open it, open settings, go to General --&gt; Profiles &amp; Device Management and tap the developer under the heading "ENTERPRISE APP".&nbsp; Press the blue trust button, and you should now be able to open the app.<br>
+  <br>
+          Before pressing the jailbreak button, We recommend closing all other apps and turning off WiFI and Cellular Data to increase the success rate of the jailbreak.<br>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<footer>
+  <hr class="navbar-footer">
+
+  <p align="center">Made with <i class="fas fa-heart" style="color: #e85369;"></i> by our contributors on <a
+      href="https://github.com/coderedkillah/jbgui.de">GitHub</a></p>
+  <br>
+
+</footer>
+
+</html>

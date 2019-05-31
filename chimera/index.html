@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chimera - Jailbreak Guides</title>
+  <link rel="shortcut icon" href="https://i.vgy.me/KY96Du.png">
+  <link rel="stylesheet" type="text/css" href="../css/articles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="apple-touch-icon" href="https://i.vgy.me/IVzE8H.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Chimera - Jailbreak Guides">
+  <meta property="og:description" content="Helpful, open source guides relating to iOS jailbreaking.">
+  <meta property="og:url" content="https://jbgui.de">
+  <meta property="og:image" content="https://i.vgy.me/IVzE8H.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <br>
+
+  <nav class="navbar is-fixed-top" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://jbgui.de">
+        <img src="/img/logo.png" width="240" height="29" alt="JailbreakGuides">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="https://jbgui.de/unc0ver/">
+          unc0ver
+        </a>
+        <a class="navbar-item" href="https://jbgui.de/chimera">
+          Chimera
+        </a>
+        <a class="navbar-item" href="https://jbgui.de/packagemanagers">
+          Package Managers
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://jbgui.de/electra">
+              Electra
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/legacy">
+              Legacy
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/other">
+              Other
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+      </div>
+        </div>
+  </nav>
+  <hr class="navbar-hr">
+
+
+    <div id="top" style="background-color: #d64646; float: center; text-align: center; height: 52px;">
+        <p id="construction">Site under construction. Check back later.</p></div>
+                <br>
+                <br>
+                <br>
+                <!-- Start here until we're finished 🤮-->
+
+  <br>
+  <br>
+  <div class="article-container">
+
+    <div class="article-top">
+
+      <div class="columns">
+
+        <div class="column">
+
+          <div class="intro">
+
+            <p class="big-title">Chimera</p>
+            <p class="big-title-subtitle">Jailbreak for iOS 12.0 - 12.1.2</p>
+            <p class="big-title-smalltext">Created by <a href="https://twitter.com/coolstarorg">CoolStar</a> and the <a href="https://twitter.com/Electra_Team">Electra Team</a></p>
+            <i class="fas fa-globe-americas"></i>
+              <div style="display: inline;">
+                  <p class="big-title-smalltext" style="display: inline;"><a href="https://chimera.sh">&nbsp;Website</a></p>
+              </div>
+            <br>
+            <br>
+            <div class="sections-list">
+              <p class="article-subtitle">Sections</p>
+              <ul>
+
+                <li><a class="section-list-item" href="#about">What is Chimera?
+                  </a></li>
+                <li><a class="section-list-item" href="#compatible">Device Compatibility
+                  </a></li>
+                <li><a class="section-list-item" href="#install-pc">Installation
+                  </a></li>
+                <li><a class="section-list-item" href="#install-nopc">Installation (no computer)
+                  </a></li>
+                <li><a class="section-list-item" href="#remove">Removing Chimera
+                  </a></li>
+                <li><a class="section-list-item" href="#faq">FAQ
+                  </a></li>
+
+              </ul>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="scroll-more">
+                <p class="subtitle-scroll">Scroll to continue reading <a href="#about"><i class="fas fa-angle-down"></i></a></p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="column">
+          <div class="promo-image">
+            <img src="../img/chimera/chimera-promo.png" alt="Chimera"><br>
+          </div>
+        </div>
+        </div>
+      </div>
+    <div class="article-maintext">
+          <div id="about" style="padding-top: 140px;">
+            <p class="article-subtitle">What is Chimera?</p>
+            <br>
+            <br>
+            <p class="article-text">
+              Chimera is a <a 
+              href="https://simple.wikipedia.org/wiki/Closed_source">closed-source</a> jailbreak tool for Apple devices with versions iOS 11.0 to 12.1.2.
+              Maintained by <a 
+              href="https://twitter.com/coolstarorg">CoolStar</a> and the <a 
+              href="https://twitter.com/Electra_Team">Electra Team</a>, this jailbreak tool uses a forked version of <a 
+              href="https://github.com/coolstar/substitute">Substitute</a>, also maintained by CoolStar, to load, run, and patch your system with tweaks in real time. This tool features <a 
+              href="https://jbgui.de/a12">support for A12 devices</a>, and a
+              modern, user-friendly interface for jailbreaking your iOS device.
+              </p>
+          </div>
+        </div>
+        <div id="compatible" style="padding-top: 140px;">
+            <p class="article-subtitle">Compatibility</p>
+            <br><br>
+            <p class="article-text">
+              Chimera supports ALL devices on iOS 12.0-12.1.2 (<b>Including</b> A12 devices!).
+              </p>
+          </div>
+      <div id="install-pc" style="padding-top: 140px;">
+        <p class="article-subtitle">Standard Installation</p>
+        <br>
+        <p class="article-text">
+          This is the preferred method of installing jailbreak apps onto one's device, but
+          there is a method to do it without a computer if needed. If you <em>don't</em> have a computer, click <a href="#install-nopc">here</a>.</p>
+        <br>
+        <p>To get started, you'll need to install <a href="http://cydiaimpactor.com">Cydia Impactor</a> on your
+          computer. Select your operating system, download, and open the application. </p>
+        <br>
+        <div class="column">
+            <img src="../img/installs/cydiaimpactor.png" alt="Cydia Impactor on macOS" style="max-width: 50%;">
+            <p class="image-subtitle">Cydia Impactor, upon opening.</p>
+        </div>
+        <br>
+        <p>Next, connect your iOS device to your computer using a USB cable. Cydia Impactor should recognize your device and show the connection.</p>
+        <br>
+        <div class="column">
+            <img src="../img/installs/cydiaimpactorconnected.png" alt="Cydia Impactor on macOS" style="max-width: 50%;">
+            <p class="image-subtitle">If your device isn't recognized immediately, make sure iTunes is installed.</p>
+            <p class="image-subtitle">If iTunes <em>is</em> installed, open iTunes and wait for your device to become recognized.</p>
+        </div>
+        <br>
+        <p>Once your device has been recognized, download the <a href="https://en.wikipedia.org/wiki/.ipa">IPA</a> application file.</p>
+        <br>
+        <ul>
+            <li><i class="fas fa-file-download"></i>
+              <div style="display: inline; margin-left: 0.5em;">
+                <a href="https://chimera.sh/downloads/ios/1.0.7.ipa">
+                  Chimera</a>
+            </div>
+          </li>
+        </ul>
+        <br>
+        <p>After the file has finished downloading, drag-and-drop the file onto the Cydia Impactor window.</p>
+      </div>
+      <div id="install-nopc" style="padding-top: 140px;">
+
+          <p class="article-subtitle">Installation (no computer)</p>
+          <br>
+            <p class="notice-text"> <b>Note: This method only works when a signing service has a valid certificate.</b></p>
+            <p style="display: inline;"><a href=""><i class="far fa-question-circle"></i></a></p>
+            <br>
+            <br>
+          <p class="article-text">
+            On your apple device, navigate to <a href="https://jailbreaks.fun">jailbreaks.fun</a> in Safari. Scroll down until you find Chimera. Tap on it, then press the blue "GET" button. <br>
+            <br>
+            After waiting a few seconds a popup should appear asking you if you want to install it. Press install. In a few seconds the app should be on your home screen. <br>
+    <br>
+            Before you open it, open settings, go to General --&gt; Profiles &amp; Device Management and tap the developer under the heading "ENTERPRISE APP".&nbsp; Press the blue trust button, and you should now be able to open the app.<br>
+    <br>
+    </p></div>
+
+
+</div></body>
+
+<footer>
+
+  <hr class="navbar-footer">
+
+  <p align="center">Made with <i class="fas fa-heart" style="color: #e85369;"></i> by our contributors on <a
+      href="https://github.com/coderedkillah/jbgui.de">GitHub</a></p>
+  <br>
+
+</footer>
+
+</html>
