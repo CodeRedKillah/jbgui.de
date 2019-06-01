@@ -368,17 +368,20 @@ html {
 .error-link {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .error-text {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .error-container {
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
+  text-align: center;
 }
 
 .sadmac {
