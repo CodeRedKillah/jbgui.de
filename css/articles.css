@@ -391,7 +391,7 @@ html {
 
 body.dark-mode {
   background-color: #121212;
-  color: #eee;
+  color: rgba(255, 255, 255, 0.87);
 }
 body.dark-mode a {
   color: #5fc9f8;
