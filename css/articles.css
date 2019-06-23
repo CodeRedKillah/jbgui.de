@@ -425,4 +425,6 @@ body.dark-mode .big-title-subtitle {
   color: rgba(255, 255, 255, 0.60);
 }
 
-
+body.dark-mode .urgent-text {
+  color: #ff6b66;
+}
