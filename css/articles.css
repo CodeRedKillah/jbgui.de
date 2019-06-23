@@ -413,16 +413,16 @@ body.light-mode button {
   color: #eee;
 }
 
-body.dark-mode.article-subtitle {
-  color: #eee;
+body.dark-mode .article-subtitle {
+  color: rgba(255, 255, 255, 0.87);
 }
 
 body.dark-mode .big-title {
-  color: #eee;
+  color: rgba(255, 255, 255, 0.87);
 }
 
-body.dark-mode .article-subtitle {
-  color: #eee;
+body.dark-mode .big-title-subtitle {
+  color: rgba(255, 255, 255, 0.60);
 }
 
 
