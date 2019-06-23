@@ -394,7 +394,7 @@ body.dark-mode {
   color: #eee;
 }
 body.dark-mode a {
-  color: #111;
+  color: #147efb;
 }
 body.dark-mode button {
   background-color: #eee;
@@ -406,12 +406,15 @@ body.light-mode {
   color: #111;
 }
 body.light-mode a {
-  color: #111;
+  color: #5fc9f8;
 }
 body.light-mode button {
   background-color: #111;
   color: #eee;
 }
 
+body.dark-mode.article-subtitle {
+  color: #eee;
+}
 
 
