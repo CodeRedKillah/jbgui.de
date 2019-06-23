@@ -413,12 +413,13 @@ body {
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
+}
 
-  em {
+.theme-switch-wrapper em {
     margin-left: 10px;
     font-size: 1rem;
   }
-}
+
 .theme-switch {
   display: inline-block;
   height: 34px;
