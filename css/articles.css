@@ -347,7 +347,7 @@ html {
   text-align: center;
   line-height: 52px;
   color: white;
-  font-size: 80%vw; 
+  font-size: 80%vw;
   float: center;
   white-space: nowrap;
 }
@@ -360,7 +360,7 @@ html {
 
 .error-title {
   font-family: "SF Text Medium";
-  font-size:  60px;
+  font-size: 60px;
   text-align: center;
   color: black;
 }
@@ -387,4 +387,35 @@ html {
 .sadmac {
   height: 146.5px;
   width: 110px;
+}
+
+$dark-color: #111;
+$light-color: #eee;
+
+body.dark-mode {
+  background-color: $dark-color;
+  color: $light-color;
+
+  a {
+    color: $dark-color;
+  }
+
+  button {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+}
+
+body.light-mode {
+  background-color: $light-color;
+  color: $dark-color;
+
+  a {
+    color: $dark-color;
+  }
+
+  button {
+    background-color: $dark-color;
+    color: $light-color;
+  }
 }

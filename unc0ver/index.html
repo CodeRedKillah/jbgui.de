@@ -73,6 +73,14 @@
     });
   </script>
 
+  <script>
+    function toggleDarkLight() {
+      var body = document.getElementById("body");
+      var currentClass = body.className;
+      body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+    }
+  </script>
+
 </head>
 
 <body>
@@ -130,7 +138,7 @@
       </div>
   </nav>
 
-  <body>
+  <body id="body" class="dark-mode">
     <div id="top"
       style="background-color: #d64646; float: center; align-content: center; text-align: center; height: 52px;">
       <p id="construction">Site under construction. Check back later.</p>
@@ -190,6 +198,8 @@
               <div class="scroll-more">
                 <p class="subtitle-scroll">Scroll to continue reading <a href="#about"><i
                       class="fas fa-angle-down"></i></a></i></p>
+                <button type="button" name="dark_light" onclick="toggleDarkLight()"
+                  title="Toggle dark/light mode">🌛</button>
               </div>
 
             </div>
