@@ -390,11 +390,11 @@ html {
 }
 
 body.dark-mode {
-  background-color: #111;
+  background-color: #121212;
   color: #eee;
 }
 body.dark-mode a {
-  color: #147efb;
+  color: #5fc9f8;
 }
 body.dark-mode button {
   background-color: #eee;
