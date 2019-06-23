@@ -428,3 +428,7 @@ body.dark-mode .big-title-subtitle {
 body.dark-mode .urgent-text {
   color: #ff6b66;
 }
+
+body.dark-mode .navbar {
+  background-color: #121212;
+}
