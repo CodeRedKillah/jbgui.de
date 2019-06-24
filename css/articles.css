@@ -463,3 +463,8 @@ body.dark .navbar-menu {
   background-color: #121212;
   color: rgba(255, 255, 255, 0.87);
 }
+
+body.dark #navbar-basic-example {
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.87);
+}
