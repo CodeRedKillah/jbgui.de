@@ -474,3 +474,9 @@ body.dark .navbar-link:not(.is-arrowless)::after {
   margin-top: -.375em;
   right: 1.125em;
 }
+
+body.dark .navbar-link:not(.is-arrowless)::after {
+  border-color: #3273dc;
+  margin-top: -.375em;
+  right: 1.125em;
+}
