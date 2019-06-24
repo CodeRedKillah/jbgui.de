@@ -75,14 +75,14 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
-      ((localStorage.getItem('mode') || 'light') === 'light') ? document.querySelector('body').classList.add('light'):
-        document.querySelector('body').classList.remove('light')
+      ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark'):
+        document.querySelector('body').classList.remove('dark')
     })
   </script>
 
 </head>
 
-<body id="body" class="light">
+<body id="body" class="dark">
 
   <br>
 
@@ -197,8 +197,8 @@
               <div class="scroll-more">
                 <p class="subtitle-scroll">Scroll to continue reading <a href="#about"><i
                       class="fas fa-angle-down"></i></a></i></p>
-                <a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'light') === 'light' ? 'dark' : 'light'); localStorage.getItem('mode') === 'light' ? document.querySelector('body').classList.add('light') : document.querySelector('body').classList.remove('light')"
-                  title="Darklight">Bruh</a>
+                <a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+                  title="Dark light">Bruh</a>
               </div>
 
             </div>
