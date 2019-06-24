@@ -476,7 +476,7 @@ body.dark .navbar-link:not(.is-arrowless)::after {
 }
 
 body.dark .navbar-link:not(.is-arrowless)::after {
-  border-color: #3273dc;
+  color: rgba(255, 255, 255, 0.60);
   margin-top: -.375em;
   right: 1.125em;
 }
