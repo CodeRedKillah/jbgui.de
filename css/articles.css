@@ -434,9 +434,9 @@ body.dark-mode .navbar {
 }
 
 body.light-mode #logo {
-  src: "../img/logo.png";
+  content:url("../img/logo.png");
 }
 
 body.dark-mode #logo {
-  src: "../img.logo-white.png";
+  content:url("../img/logo-white.png");
 }
