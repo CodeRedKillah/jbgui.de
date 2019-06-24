@@ -288,7 +288,7 @@ navlink {
 }
 
 .article-subtitle {
-  font-family: "SF Text Semibold", sans-serif;
+  font-family: "SF Text Medium", sans-serif;
   font-size: 35px;
   color: black;
 }
@@ -299,7 +299,7 @@ navlink {
 }
 
 .sections-list {
-  font-family: "SF Text Semibold", sans-serif;
+  font-family: "SF Text Medium", sans-serif;
   font-size: 22px;
   list-style-type: none;
 }
