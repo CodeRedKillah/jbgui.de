@@ -434,13 +434,13 @@ body.dark-mode .navbar {
 }
 
 body.dark-mode #logo {
-  background: url("../img/logo-white.png") no-repeat;
+  background: url("../img/logo-white.png") no-repeat cover;
   width: 240px;
   height: 29px;
 }
 
 body.light-mode #logo {
-  background: url("../img/logo.png") no-repeat;
+  background: url("../img/logo.png") no-repeat cover;
   width: 240px;
   height: 29px;
 }
