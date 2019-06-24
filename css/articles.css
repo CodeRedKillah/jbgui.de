@@ -482,7 +482,3 @@ body.dark .navbar-link:not(.is-arrowless)::after {
   margin-top: -.375em;
   right: 1.125em;
 }
-
-body.dark $navbar-item-hover-color {
-  color: #2a2a2a;
-}
