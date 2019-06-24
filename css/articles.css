@@ -433,14 +433,14 @@ body.dark-mode .navbar {
   background-color: #121212;
 }
 
-body.dark-mode #logo::after {
-  content: url("../img/logo-white.png");
+body.dark-mode #logo {
+  background: url("../img/logo-white.png") no-repeat;
   width: 240px;
   height: 29px;
 }
 
-body.light-mode #logo::after {
-  content: url("../img/logo.png");
+body.light-mode #logo {
+  background: url("../img/logo.png") no-repeat;
   width: 240px;
   height: 29px;
 }
