@@ -483,8 +483,6 @@ body.dark .navbar-link:not(.is-arrowless)::after {
   right: 1.125em;
 }
 
-body.dark {
-  $navbar-item-hover-color {
-    color: #2a2a2a;
-  }
+body.dark $navbar-item-hover-color {
+  color: #2a2a2a;
 }
