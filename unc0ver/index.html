@@ -74,11 +74,10 @@
   </script>
 
   <script>
-    function toggleDarkLight() {
-      var body = document.getElementById("body");
-      var currentClass = body.className;
-      body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-    }
+    document.addEventListener('DOMContentLoaded', (event) => {
+      ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark'):
+        document.querySelector('body').classList.remove('dark')
+    })
   </script>
 
 </head>
@@ -198,7 +197,9 @@
               <div class="scroll-more">
                 <p class="subtitle-scroll">Scroll to continue reading <a href="#about"><i
                       class="fas fa-angle-down"></i></a></i></p>
-                      <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+                <button type="button" name="dark_light"
+                  onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark-mode') === 'dark-mode' ? 'light-mode' : 'dark-mode'); localStorage.getItem('mode') === 'dark-mode' ? document.querySelector('body').classList.add('dark-mode') : document.querySelector('body').classList.remove('dark-mode')"
+                  title="Dark/light title=" Toggle dark/light mode">🌛</button>
 
 
               </div>
