@@ -434,9 +434,10 @@ body.dark-mode .navbar {
 }
 
 body.light-mode #logo {
-  content:url("../img/logo.png");
+  background: url("../img/logo.png");
+  background-size: 240, 29;
 }
 
 body.dark-mode #logo {
-  content:url("../img/logo-white.png");
+  background: url("../img/logo-white.png");
 }
