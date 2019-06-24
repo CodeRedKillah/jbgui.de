@@ -482,3 +482,12 @@ body.dark .navbar-link:not(.is-arrowless)::after {
   margin-top: -.375em;
   right: 1.125em;
 }
+
+body.dark img {
+  opacity: .75;
+  transition: opacity .5s ease-in-out;
+}
+
+body.dark img:hover {
+  opacity: 1;
+}
