@@ -449,7 +449,7 @@ body.dark #logo {
   background-position: left;
 }
 
-body.light #logo {
+#logo {
   background: url("../img/logo.png") no-repeat;
   width: 244px;
   height: 29px;
