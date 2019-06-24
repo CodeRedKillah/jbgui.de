@@ -470,13 +470,13 @@ body.dark #navbar-basic-example {
 }
 
 body.dark .navbar-link:not(.is-arrowless)::after {
-  color: rgba(255, 255, 255, 0.60);
+  color: #72b2fd;
   margin-top: -.375em;
   right: 1.125em;
 }
 
 body.dark .navbar-link:not(.is-arrowless)::after {
-  border-color: rgba(255, 255, 255, 0.60);
+  border-color: #72b2fd;
   margin-top: -.375em;
   right: 1.125em;
 }
