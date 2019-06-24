@@ -473,3 +473,7 @@ body.dark #top {
   text-align: center;
   height: 52px;
 }
+
+body.dark .navbar-item {
+  color: rgba(255, 255, 255, 0.60)
+}
