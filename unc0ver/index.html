@@ -75,9 +75,8 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
-      ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark'):
-        document.querySelector('body').classList.remove('dark')
-    })
+      ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+        })
   </script>
 
 </head>
@@ -197,9 +196,10 @@
               <div class="scroll-more">
                 <p class="subtitle-scroll">Scroll to continue reading <a href="#about"><i
                       class="fas fa-angle-down"></i></a></i></p>
-                <button type="button" name="dark_light"
-                  onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                  title="Dark/light title="Toggle dark or light mode">ModeSwitch</button>
+                      <p>
+                          <a href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light
+                        </p>
+                        
 
 
               </div>
