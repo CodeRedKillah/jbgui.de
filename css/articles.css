@@ -432,3 +432,11 @@ body.dark-mode .urgent-text {
 body.dark-mode .navbar {
   background-color: #121212;
 }
+
+body.light-mode #logo {
+  src: "../img/logo.png";
+}
+
+body.dark-mode #logo {
+  src: "../img.logo-white.png";
+}
