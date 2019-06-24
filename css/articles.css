@@ -480,3 +480,9 @@ body.dark .navbar-link:not(.is-arrowless)::after {
   margin-top: -.375em;
   right: 1.125em;
 }
+
+body.dark .navbar-link:not(.is-arrowless)::after {
+  color: rgba(255, 255, 255, 0.60);
+  margin-top: -.375em;
+  right: 1.125em;
+}
