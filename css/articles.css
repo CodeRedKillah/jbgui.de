@@ -443,10 +443,11 @@ body.dark-mode #logo {
 }
 
 body.light-mode #logo {
-  background-image: url("../img/logo.png");
-  background-repeat: no-repeat;
-  width: 240px;
-  height: 24px;
-  min-width: 240px;
-  min-height: 24px;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url("../img/logo.png") no-repeat;
+    width: 240px; /* Width of new image */
+    height: 24px; /* Height of new image */
+    padding-left: 240px; /* Equal to width of new image */
 }
