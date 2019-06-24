@@ -408,18 +408,6 @@ body.dark button {
   color: #111;
 }
 
-body.light {
-  background-color: #FFFFFF;
-  color: #111;
-}
-body.light a {
-  color: #147efb;
-}
-body.light button {
-  background-color: #111;
-  color: #eee;
-}
-
 body.dark .article-subtitle {
   color: rgba(255, 255, 255, 0.87);
 }
@@ -458,22 +446,15 @@ body.dark #logo {
   background-position: left;
 }
 
-body.light #top {
-  background-color: #d64646;
-  float: center; 
-  align-content: center;
-  text-align: center;
-  height: 52px;
-}
-
-body.dark #top {
-  background-color: #d64646;
-  float: center; 
-  align-content: center;
-  text-align: center;
-  height: 52px;
-}
-
 body.dark .navbar-item {
   color: rgba(255, 255, 255, 0.60)
+}
+
+body.dark .navbar-link {
+  color: rgba(255, 255, 255, 0.60)
+}
+
+body.dark .navbar-dropdown {
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.87);
 }
