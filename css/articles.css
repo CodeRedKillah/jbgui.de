@@ -433,12 +433,20 @@ body.dark-mode .navbar {
   background-color: #121212;
 }
 
-body.light-mode #logo {
-  background: url("../img/logo.png");
-  background-size: cover;
+body.dark-mode #logo {
+  background-image: url("../img/logo-white.png");
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 24px;
+  min-width: 240px;
+  min-height: 24px;
 }
 
-body.dark-mode #logo {
-  background: url("../img/logo-white.png");
-  background-size: cover;
+body.light-mode #logo {
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 24px;
+  min-width: 240px;
+  min-height: 24px;
 }
