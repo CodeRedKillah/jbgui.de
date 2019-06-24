@@ -434,13 +434,19 @@ body.dark-mode .navbar {
 }
 
 body.dark-mode #logo {
-  background: url("../img/logo-white.png") no-repeat cover;
-  width: 240px;
+  background: url("../img/logo-white.png") no-repeat;
+  width: 244px;
   height: 29px;
+  background-origin: inherit;
+  background-size: cover;
+  background-position: left;
 }
 
 body.light-mode #logo {
-  background: url("../img/logo.png") no-repeat cover;
-  width: 240px;
+  background: url("../img/logo.png") no-repeat;
+  width: 244px;
   height: 29px;
+  background-origin: inherit;
+  background-size: cover;
+  background-position: left;
 }
