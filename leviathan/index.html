@@ -81,14 +81,13 @@
 
     function switchTheme(e) {
       if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark'); //add this
+        document.querySelector('body').classList.add('dark');
       } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light'); //add this
+        document.querySelector('body').classList.remove('dark');
       }
     }
 
+<<<<<<< HEAD
 
     const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
@@ -110,6 +109,9 @@
 >>>>>>> parent of f572ed1... try different toggle switch (please work!)
 =======
 >>>>>>> parent of f572ed1... try different toggle switch (please work!)
+=======
+    toggleSwitch.addEventListener('change', switchTheme, false);
+>>>>>>> parent of 86f3c3a... forgot to add the rest of the JS
   </script>
 
 </head>
