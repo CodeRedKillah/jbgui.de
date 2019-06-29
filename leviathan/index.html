@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--#include file="/header.html" -->
+<html lang="en">
+
+<head>
+  <title>unc0ver - Jailbreak Guides</title>
+  <link rel="shortcut icon" href="https://i.vgy.me/KY96Du.png">
+  <link rel="stylesheet" type="text/css" href="../css/articles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="..css/mystyles.scss">
+  <link rel="apple-touch-icon" href="https://i.vgy.me/IVzE8H.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="unc0ver - Jailbreak Guides">
+  <meta property="og:description" content="Helpful, open source guides relating to iOS jailbreaking.">
+  <meta property="og:url" content="https://jbgui.de">
+  <meta property="og:image" content="https://i.vgy.me/IVzE8H.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark'):
+        document.querySelector('body').classList.remove('dark')
+    })
+  </script>
+
+</head>
+
+<body id="body" class="dark">
+
+  <br>
+
+  <nav class="navbar is-fixed-top" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://jbgui.de">
+        <div id="logo"></div>
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="https://jbgui.de/unc0ver/">
+          unc0ver
+        </a>
+        <a class="navbar-item" href="https://jbgui.de/chimera">
+          Chimera
+        </a>
+        <a class="navbar-item" href="https://jbgui.de/package-managers">
+          Package Managers
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://jbgui.de/electra">
+              Electra
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/apple-tv">
+              Apple TV
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/legacy">
+              Legacy
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/other">
+              Other
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+      </div>
+  </nav>
+
+  <body>
+    <div id="top"
+      style="background-color: #d64646; float: center; align-content: center; text-align: center; height: 52px;">
+      <p id="construction">Site under construction. Check back later.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- Start here until we're finished 🤮-->
+
+    <br>
+    <br>
+    <div class="article-container">
+
+      <div class="article-top">
+
+        <div class="columns">
+
+          <div class="column">
+
+            <div class="intro">
+
+              <p class="big-title">Leviathan</p>
+              <p class="big-title-subtitle">Jailbreak for iOS 12.0 - 12.1.2</p>
+              <p class="big-title-smalltext">Created by team cute fem bf (members redacted)</p>
+              <i class="fab fa-github"></i>
+              <div style="display: inline;">
+                <p class="big-title-smalltext" style="display: inline;"><a
+                    href="https://github.com/pwn20wndstuff/Undecimus">&nbsp;GitHub Repository</a></p>
+              </div>
+              <br>
+              <br>
+              <div class="sections-list">
+                <p class="article-subtitle">Sections</p>
+                <ul>
+
+                  <li><a class="section-list-item" href="#about">What is unc0ver?
+                    </a></li>
+                  <li><a class="section-list-item" href="#compatible">Device Compatibility
+                    </a></li>
+                  <li><a class="section-list-item" href="#comparison">unc0ver or unc0ver dark?
+                    </a></li>
+                  <li><a class="section-list-item" href="#install-pc">Installation
+                    </a></li>
+                  <li><a class="section-list-item" href="#install-nopc">Installation (no computer)
+                    </a></li>
+                  <li><a class="section-list-item" href="#remove">Removing unc0ver
+                    </a></li>
+                  <li><a class="section-list-item" href="#faq">FAQ
+                    </a></li>
+
+                </ul>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="scroll-more">
+                <p class="subtitle-scroll">Scroll to continue reading <a href="#about"><i
+                      class="fas fa-angle-down"></i></a></i></p>
+                <a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+                  title="Dark light">Bruh</a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="column">
+            <div class="promo-image">
+              <img src="../img/unc0ver/unc0ver-promo.png" alt="unc0ver"> <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article-maintext">
+        <div id="about" style="padding-top: 140px;">
+          <p class="article-subtitle">What is unc0ver?</p>
+          <p class="urgent-text">unc0ver does not support A12 devices at this time.</p>
+          <p style="display: inline;"><a href=""><i class="far fa-question-circle"></i></a></p>
+          <br>
+          <br>
+          <p class="article-text">
+            unc0ver is an <a href="https://en.wikipedia.org/wiki/Open-source_software">open-source</a> jailbreak
+            tool
+            for Apple devices with versions iOS 11.0 to 12.1.2.
+            Maintained by <a href="https://twitter.com/Pwn20wnd">pwn20wnd</a> and <a
+              href="https://twitter.com/sbingner">Sam Bingner</a>, this jailbreak tool uses <a
+              href="http://www.cydiasubstrate.com">Cydia Substrate</a> to load, run, and patch your system with
+            tweaks
+            in real time. This tool includes a number of settings
+            to adjust your jailbroken state and diagnose any issues you might have.
+          </p>
+          <br>
+          <p class="article-text">
+            You can view the source code of unc0ver <a href="https://github.com/pwn20wndstuff/undecimus">here</a>.
+          </p>
+        </div>
+        <div id="compatible" style="padding-top: 140px;">
+          <p class="article-subtitle">Compatibility</p>
+          <br>
+          <br>
+          <p class="article-text">
+            All devices except A12 Devices (iPhones XR, XS, XS Max and the 2018 iPad Pros) from iOS 11.0-12.1.2 are
+            supported!
+          </p>
+        </div>
+        <div id="comparison" style="padding-top: 140px;">
+          <p class="article-subtitle">unc0ver or unc0ver dark?</p>
+          <br>
+          <p class="article-text">
+            If you're looking to jailbreak with unc0ver, you have two options; the original unc0ver, or
+            <a href="https://dark.diatr.us">unc0ver
+              dark</a>, a <a href="https://en.wikipedia.org/wiki/Fork_(software_development)">fork</a> of the
+            unc0ver
+            project developed by <a href="https://twitter.com/versusess">Shady</a> and <a
+              href="twitter.com/pinseeker75">Diatrus</a>, which adds support for <a
+              href="https://jbgui.de/sileo/">Sileo</a>,
+            and allows you to change the look of your jailbreak application using a theme switcher, with preset
+            options
+            (True Black, Dark Purple, and White).</p>
+          <br>
+          <p>unc0ver (original) does not offer support for Sileo, or application theming options provided by unc0ver
+            dark.</p>
+          <br>
+          <p>You can learn more about unc0ver dark <a href="dark.diatr.us">here</a>.</p>
+        </div>
+        <div id="install-pc" style="padding-top: 140px;">
+          <p class="article-subtitle">Standard Installation</p>
+          <br>
+          <p class="article-text">
+            This is the preferred method of installing jailbreak apps onto one's device, but
+            there is a method to do it without a computer if needed. If you <em>don't</em> have a computer, click <a
+              href="#install-nopc">here</a>.</p>
+          <br>
+          <p>To get started, you'll need to install <a href="http://cydiaimpactor.com">Cydia Impactor</a> on your
+            computer. Select your operating system, download, and open the application. </p>
+          <br>
+          <div class="column">
+            <img src="../img/installs/cydiaimpactor.png" alt="Cydia Impactor on macOS" style="max-width: 50%;">
+            <p class="image-subtitle">Cydia Impactor, upon opening.</p>
+          </div>
+          <br>
+          <p>Next, connect your iOS device to your computer using a USB cable. Cydia Impactor should recognize your
+            device and show the connection.</p>
+          <br>
+          <div class="column">
+            <img src="../img/installs/cydiaimpactorconnected.png" alt="Cydia Impactor on macOS" style="max-width: 50%;">
+            <p class="image-subtitle">If your device isn't recognized immediately, make sure iTunes is installed.
+            </p>
+            <p class="image-subtitle">If iTunes <em>is</em> installed, open iTunes and wait for your device to
+              become
+              recognized.</p>
+          </div>
+          <br>
+          <p>Once your device has been recognized, download your preferred <a
+              href="https://en.wikipedia.org/wiki/.ipa">IPA</a> application file.</p>
+          <br>
+          <ul>
+            <li><i class="fab fa-github"></i>
+              <div style="display: inline; margin-left: 0.5em;">
+                <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.1.2/Undecimus-v3.1.2.ipa">
+                  unc0ver</a>
+              </div>
+            </li>
+            <li><i class="fas fa-code-branch" style="padding-left: 0.2em;"></i>
+              <div style="display: inline; margin-left: 0.7em;">
+                <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.1.2/Undecimus-v3.1.2.ipa">
+                  unc0ver dark</a>
+              </div>
+            </li>
+          </ul>
+          <br>
+          <p>After the file has finished downloading, drag-and-drop the file onto the Cydia Impactor window.</p>
+        </div>
+        <div id="install-nopc" style="padding-top: 140px;">
+
+          <p class="article-subtitle">Installation (no computer)</p>
+          <br>
+          <p class="notice-text"> <b>Note: This method only works when a signing service has a valid certificate.</b>
+          </p>
+          <p style="display: inline;"><a href=""><i class="far fa-question-circle"></i></a></p>
+          <br>
+          <br>
+          <p class="article-text">
+            On your apple device, navigate to <a href="https://jailbreaks.fun">jailbreaks.fun</a> in Safari. Scroll
+            down
+            until you find Chimera. Tap on it, then press the blue "GET" button. <br>
+            <br>
+            After waiting a few seconds a popup should appear asking you if you want to install it. Press install. In
+            a
+            few seconds the app should be on your home screen. <br>
+            <br>
+            Before you open it, open settings, go to General --&gt; Profiles &amp; Device Management and tap the
+            developer
+            under the heading "ENTERPRISE APP".&nbsp; Press the blue trust button, and you should now be able to open
+            the
+            app.<br>
+            <br>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <footer>
+    <hr class="navbar-footer">
+
+    <p align="center">Made with <i class="fas fa-heart" style="color: #e85369;"></i> by our contributors on <a
+        href="https://github.com/coderedkillah/jbgui.de">GitHub</a></p>
+    <p align="center"><a href="https://jbgui.de/about">About</a> - <a href="https://jbgui.de/docs">Docs</a> - <a
+        href="https://jbgui.de/donate">Donate</a></p>
+    <br>
+
+  </footer>
+
+</html>
