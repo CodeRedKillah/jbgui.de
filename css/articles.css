@@ -498,6 +498,7 @@ body.dark img:hover {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
@@ -511,6 +512,9 @@ body.dark img:hover {
 .theme-switch {
   display: inline-block;
   height: 34px;
+=======
+ .switch {
+>>>>>>> parent of f572ed1... try different toggle switch (please work!)
 =======
  .switch {
 >>>>>>> parent of f572ed1... try different toggle switch (please work!)
@@ -571,6 +575,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 4414277... add a switch (part 1 of dark mode switch)
 }
@@ -583,3 +588,6 @@ input:checked + .slider:before {
 =======
 }
 >>>>>>> parent of 4414277... add a switch (part 1 of dark mode switch)
+=======
+} 
+>>>>>>> parent of f572ed1... try different toggle switch (please work!)
