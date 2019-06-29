@@ -491,3 +491,7 @@ body.dark img {
 body.dark img:hover {
   opacity: 1;
 }
+
+body.dark .article-text {
+  color: rgba(255, 255, 255, 0.60)
+}
