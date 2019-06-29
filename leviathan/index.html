@@ -75,43 +75,10 @@
   </script>
 
   <script>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-    function switchTheme(e) {
-      if (e.target.checked) {
-        document.querySelector('body').classList.add('dark');
-      } else {
-        document.querySelector('body').classList.remove('dark');
-      }
-    }
-
-<<<<<<< HEAD
-
-    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-    if (currentTheme) {
-      document.documentElement.setAttribute('data-theme', currentTheme);
-
-      if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
-      }
-    }
-=======
-=======
->>>>>>> parent of f572ed1... try different toggle switch (please work!)
     document.addEventListener('DOMContentLoaded', (event) => {
       ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark'):
         document.querySelector('body').classList.remove('dark')
     })
-<<<<<<< HEAD
->>>>>>> parent of f572ed1... try different toggle switch (please work!)
-=======
->>>>>>> parent of f572ed1... try different toggle switch (please work!)
-=======
-    toggleSwitch.addEventListener('change', switchTheme, false);
->>>>>>> parent of 86f3c3a... forgot to add the rest of the JS
   </script>
 
 </head>
@@ -230,47 +197,8 @@
               <div class="scroll-more">
                 <p class="subtitle-scroll">Scroll to continue reading <a href="#about"><i
                       class="fas fa-angle-down"></i></a></i></p>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <label class="switch">
-                  <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                      <input type="checkbox" id="checkbox" />
-                      <div class="slider round"></div>
-                    </label>
-                    <em>Enable Dark Mode!</em>
-                  </div>
-
-                  <a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                    title="Dark light">Bruh</a>
-=======
                 <a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
                   title="Dark light">Bruh</a>
->>>>>>> parent of 4414277... add a switch (part 1 of dark mode switch)
-=======
-                      <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                      </label>
-=======
->>>>>>> parent of 4414277... add a switch (part 1 of dark mode switch)
-=======
->>>>>>> parent of 4414277... add a switch (part 1 of dark mode switch)
-                <a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                  title="Dark light">Bruh</a>
->>>>>>> parent of f572ed1... try different toggle switch (please work!)
-=======
-                      <label class="switch">
-                        <input type="checkbox" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                        title="Dark light">
-                        <span class="slider round"></span>
-                      </label>
-                <a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                  title="Dark light">Bruh</a>
->>>>>>> parent of f572ed1... try different toggle switch (please work!)
               </div>
 
             </div>
