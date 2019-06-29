@@ -75,10 +75,17 @@
   </script>
 
   <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-      ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark'):
-        document.querySelector('body').classList.remove('dark')
-    })
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.querySelector('body').classList.add('dark');
+      } else {
+        document.querySelector('body').classList.remove('dark');
+      }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
   </script>
 
 </head>
@@ -197,13 +204,17 @@
               <div class="scroll-more">
                 <p class="subtitle-scroll">Scroll to continue reading <a href="#about"><i
                       class="fas fa-angle-down"></i></a></i></p>
-                      <label class="switch">
-                        <input type="checkbox" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                        title="Dark light">
-                        <span class="slider round"></span>
-                      </label>
-                <a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                  title="Dark light">Bruh</a>
+                <label class="switch">
+                  <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                      <input type="checkbox" id="checkbox" />
+                      <div class="slider round"></div>
+                    </label>
+                    <em>Enable Dark Mode!</em>
+                  </div>
+
+                  <a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+                    title="Dark light">Bruh</a>
               </div>
 
             </div>
