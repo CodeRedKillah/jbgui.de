@@ -495,3 +495,11 @@ body.dark img:hover {
 body.dark .article-text {
   color: rgba(255, 255, 255, 0.60)
 }
+
+#article-regdist {
+  padding-top: 50px;
+}
+
+#article-first {
+  padding-top: 140px;
+}
