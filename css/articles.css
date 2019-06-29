@@ -502,13 +502,12 @@ body.dark img:hover {
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-}
 
-.theme-switch-wrapper em {
+  em {
     margin-left: 10px;
     font-size: 1rem;
+  }
 }
-
 .theme-switch {
   display: inline-block;
   height: 34px;
