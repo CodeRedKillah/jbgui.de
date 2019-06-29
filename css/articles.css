@@ -492,6 +492,7 @@ body.dark img {
 
 body.dark img:hover {
   opacity: 1;
+<<<<<<< HEAD
 }
 
 .theme-switch-wrapper {
@@ -551,4 +552,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+=======
+>>>>>>> parent of 4414277... add a switch (part 1 of dark mode switch)
 }
