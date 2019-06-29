@@ -414,7 +414,7 @@ body.dark .article-subtitle {
   color: rgba(255, 255, 255, 0.87);
 }
 
-body.dark .big-title {
+[data-theme="dark"] .big-title {
   color: rgba(255, 255, 255, 0.87);
 }
 
