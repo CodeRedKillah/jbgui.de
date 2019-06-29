@@ -415,6 +415,7 @@ body.dark .article-subtitle {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [data-theme="dark"] {
   .big-title {
     color: rgba(255, 255, 255, 0.87);
@@ -425,6 +426,11 @@ body.dark .big-title {
   color: rgba(255, 255, 255, 0.87);
 }
 >>>>>>> parent of 86f3c3a... forgot to add the rest of the JS
+=======
+[data-theme="dark"] .big-title {
+  color: rgba(255, 255, 255, 0.87);
+}
+>>>>>>> parent of 723b063... trying different css (this shit ain't working
 
 body.dark .big-title-subtitle {
   color: rgba(255, 255, 255, 0.60);
