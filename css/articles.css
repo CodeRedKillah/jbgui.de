@@ -507,3 +507,11 @@ body.dark .article-text {
 #top {
   z-index: 1;
 }
+
+body.dark #top {
+  background-color: #CF6679;
+}
+
+#top {
+  background-color: #d64646;
+}
