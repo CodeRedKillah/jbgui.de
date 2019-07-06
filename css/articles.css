@@ -486,6 +486,7 @@ body.dark .navbar-link:not(.is-arrowless)::after {
 body.dark img {
   opacity: .75;
   transition: opacity .5s ease-in-out;
+  position: absolute;
   z-index: -1;
 }
 
