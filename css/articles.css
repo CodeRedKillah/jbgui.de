@@ -486,8 +486,6 @@ body.dark .navbar-link:not(.is-arrowless)::after {
 body.dark img {
   opacity: .75;
   transition: opacity .5s ease-in-out;
-  position: absolute;
-  z-index: -1;
 }
 
 body.dark img:hover {
@@ -504,4 +502,8 @@ body.dark .article-text {
 
 #article-first {
   padding-top: 140px;
+}
+
+#top {
+  z-index: 1;
 }
