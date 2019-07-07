@@ -390,6 +390,8 @@ html {
   background-origin: inherit;
   background-size: cover;
   background-position: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body.dark .sadmac {
@@ -399,6 +401,8 @@ body.dark .sadmac {
   background-origin: inherit;
   background-size: cover;
   background-position: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body.dark code[class*=language-],
