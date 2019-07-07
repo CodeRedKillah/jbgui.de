@@ -729,3 +729,11 @@ body.dark .error-link {
 body.dark .errorpage {
   background-color: #121212;
 }
+
+html {
+  background-color: white;
+}
+
+body.dark html {
+  background-color: #121212;
+}
