@@ -122,6 +122,16 @@
           </a>
         </div>
       </div>
+      <div class="navbar-switch">
+          <label class="switch">
+            <input type="checkbox" id="togButton"
+              onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+              title="Dark light">
+            <span class="slider round"></span>
+          </label>
+          <a class="re-align" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+          title="Dark light">Re-Align</a>
+        </div>
     </div>
     <div class="navbar-end">
     </div>

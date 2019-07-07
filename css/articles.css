@@ -396,14 +396,22 @@ body.dark table tbody>tr:nth-child(odd)>th {
   color: rgba(255, 255, 255, 0.87);
 }
 
+body {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 body.dark {
   background-color: #121212;
   color: rgba(255, 255, 255, 0.87);
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 body.dark a {
   color: #72b2fd;
 }
+
 
 body.dark button {
   background-color: #eee;
@@ -426,8 +434,15 @@ body.dark .urgent-text {
   color: #ff6b66;
 }
 
+.navbar {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 body.dark .navbar {
   background-color: #121212;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 body.dark #logo {
@@ -449,11 +464,11 @@ body.dark #logo {
 }
 
 body.dark .navbar-item {
-  color: rgba(255, 255, 255, 0.60)
+  color: rgba(255, 255, 255, 0.60);
 }
 
 body.dark .navbar-link {
-  color: rgba(255, 255, 255, 0.60)
+  color: rgba(255, 255, 255, 0.60);
 }
 
 body.dark .navbar-dropdown {
@@ -462,13 +477,50 @@ body.dark .navbar-dropdown {
 }
 
 body.dark .navbar-menu {
-  background-color: #121212;
   color: rgba(255, 255, 255, 0.87);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navbar-start {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navbar-item {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+body.dark .navbar-item {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+body.dark nav {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+nav {
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 body.dark #navbar-basic-example {
   background-color: #121212;
   color: rgba(255, 255, 255, 0.87);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+body.dark .navbar {
+  background-color: #121212;
+}
+
+#navbar-basic-example {
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 body.dark .navbar-link:not(.is-arrowless)::after {
@@ -485,7 +537,7 @@ body.dark .navbar-link:not(.is-arrowless)::after {
 
 body.dark img {
   opacity: .75;
-  transition: opacity .5s ease-in-out;
+  transition: opacity .4s ease-in-out;
 }
 
 body.dark img:hover {
@@ -506,10 +558,14 @@ body.dark .article-text {
 
 #top {
   z-index: 1;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 body.dark #top {
   background-color: #CF6679;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 #top {
@@ -530,11 +586,23 @@ body.dark #construction {
   width: 60px;
   height: 34px;
 }
+
+body.dark .navbar-item {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+body.dark #navbarBasicExample {
+  background-color: rgba(255,255,255,0);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
  
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
+  
 }
  
 .slider {
@@ -544,11 +612,39 @@ body.dark #construction {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  background-color: white;
+  border: 2px black solid;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+body.dark .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #121212;
+  border: 2px white solid;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
  
+body.dark .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: url("../img/dnd.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 .slider:before {
   position: absolute;
   content: "";
@@ -556,17 +652,18 @@ body.dark #construction {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  background: url("../img/sunglyph.png") no-repeat;
+  background-size: contain;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
  
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #121212;
 }
  
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #121212;
 }
  
 input:checked + .slider:before {
@@ -581,4 +678,14 @@ input:checked + .slider:before {
  
 .slider.round:before {
   border-radius: 50%;
+}
+
+.navbar-switch {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.re-align {
+  padding-left: 10px;
 }

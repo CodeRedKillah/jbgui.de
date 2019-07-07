@@ -133,21 +133,29 @@
             </a>
           </div>
         </div>
+        <div class="navbar-switch">
+          <label class="switch">
+            <input type="checkbox" id="togButton"
+              onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+              title="Dark light">
+            <span class="slider round"></span>
+          </label>
+          <a class="re-align" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+          title="Dark light">Re-Align</a>
+        </div>
       </div>
       <div class="navbar-end">
       </div>
   </nav>
 
   <body>
-    <div id="top"
-      style="float: center; align-content: center; text-align: center; height: 52px;">
+    <div id="top" style="float: center; align-content: center; text-align: center; height: 52px;">
       <p id="construction">Site under construction. Check back later.</p>
     </div>
     <br>
     <br>
-    <br>
     <!-- Start here until we're finished 🤮-->
-
+    <br>
     <br>
     <br>
     <div class="article-container">
@@ -198,13 +206,6 @@
               <div class="scroll-more">
                 <p class="subtitle-scroll">Scroll to continue reading <a href="#about"><i
                       class="fas fa-angle-down"></i></a></i></p>
-                <a onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                  title="Dark light">Bruh</a>
-                  <label class="switch">
-                    <input type="checkbox" id="togButton" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                    title="Dark light">
-                    <span class="slider round"></span>
-                  </label>
               </div>
 
             </div>
