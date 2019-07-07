@@ -726,6 +726,6 @@ body.dark .error-link {
   color: #72b2fd;
 }
 
-body.dark html {
+body.dark #error-html {
   background-color: #121212;
 }
