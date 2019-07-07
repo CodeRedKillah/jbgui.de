@@ -78,10 +78,10 @@
 
 </head>
 
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="https://jbgui.de">
-            <img src="/img/logo.png" width="240" height="29">
+            <div id="logo"></div>
         </a>
 
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -100,11 +100,9 @@
             <a class="navbar-item" href="https://jbgui.de/chimera">
                 Chimera
             </a>
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-item" href="https://jbgui.de/package-managers">
-                    Package Managers
-                </a>
-            </div>
+            <a class="navbar-item" href="https://jbgui.de/package-managers">
+                Package Managers
+            </a>
 
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
@@ -126,17 +124,17 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="navbar-switch">
-            <label class="switch">
-                <input type="checkbox" id="togButton"
+            <div class="navbar-switch">
+                <label class="switch">
+                    <input type="checkbox" id="togButton"
+                        onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+                        title="Dark light">
+                    <span class="slider round"></span>
+                </label>
+                <a class="re-align"
                     onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                    title="Dark light">
-                <span class="slider round"></span>
-            </label>
-            <a class="re-align"
-                onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                title="Dark light">Re-Align</a>
+                    title="Dark light">Re-Align</a>
+            </div>
         </div>
         <div class="navbar-end">
         </div>
