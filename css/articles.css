@@ -321,12 +321,11 @@ navlink {
   display: inline;
 }
 
-navbar-hr {
+.navbar-hr {
   color: #dddddd;
 }
 
-navbar-footer {
-  color: #dddddd;
+.navbar-footer {
   width: 100%;
 }
 
@@ -688,4 +687,12 @@ input:checked + .slider:before {
 
 .re-align {
   padding-left: 10px;
+}
+
+body.dark .navbar-footer {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-footer {
+  background-color: rgba(0, 0, 0, 0.08);
 }
