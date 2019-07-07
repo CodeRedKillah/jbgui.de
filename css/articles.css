@@ -696,3 +696,15 @@ body.dark .navbar-footer {
 .navbar-footer {
   background-color: rgba(0, 0, 0, 0.08);
 }
+
+body.dark .error-title {
+  color: rgba(255, 255, 255, 0.87)
+}
+
+body.dark .error-text {
+  color: rgba(255, 255, 255, 0.87)
+}
+
+body.dark .error-link {
+  color: #72b2fd;
+}
