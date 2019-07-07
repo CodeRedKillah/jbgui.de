@@ -397,8 +397,8 @@ body.dark table tbody>tr:nth-child(odd)>th {
 }
 
 body.dark {
-  background-color: #121212;
-  color: rgba(255, 255, 255, 0.87);
+  background-color: #323232;
+  color: #E7E7E7;
 }
 
 body.dark a {
