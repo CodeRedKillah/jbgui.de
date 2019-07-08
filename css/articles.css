@@ -645,6 +645,7 @@ body.dark .slider {
   border: 2px white solid;
   -webkit-transition: .2s;
   transition: .2s;
+  opacity: 0.86;
 }
  
 body.dark .slider:before {
@@ -659,6 +660,7 @@ body.dark .slider:before {
   vertical-align: middle;
   -webkit-transition: .2s;
   transition: .2s;
+  opacity: 0.86;
 }
 
 .slider:before {
