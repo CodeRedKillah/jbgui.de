@@ -579,7 +579,8 @@ body.dark .article-text {
 }
 
 body.dark #top {
-  background-color: #CF6679;
+  background-color: #761A2F;
+  color: white;
   -webkit-transition: .2s;
   transition: .2s;
 }
