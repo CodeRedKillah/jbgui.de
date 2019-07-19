@@ -276,42 +276,58 @@ navlink {
 }
 
 .big-title {
-  font-family: 'SF Text Bold', sans-serif;
+  font-family: 'SF Display Bold', sans-serif;
   font-size: 70px;
   color: black;
 }
 
 .big-title-subtitle {
-  font-family: 'SF Text Medium', sans-serif;
+  font-family: 'SF Display Medium', sans-serif;
   font-size: 20px;
   color: #6b6b6b;
 }
 
 .article-subtitle {
-  font-family: "SF Text Medium", sans-serif;
+  font-family: "SF Display Medium", sans-serif;
   font-size: 35px;
   color: black;
 }
 
+.article-subtitle-top {
+  font-family: "SF Display Semibold", sans-serif;
+  font-size: 35px;
+  color: black;
+}
+
+body.dark .article-subtitle-top {
+  font-family: "SF Display Semibold", sans-serif;
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
 .image-subtitle {
-  font-family: "SF Text Light", sans-serif;
+  font-family: "SF Display Light", sans-serif;
   font-size: 14px;
 }
 
 .sections-list {
-  font-family: "SF Text Medium", sans-serif;
+  font-family: "SF Display Medium", sans-serif;
   font-size: 22px;
   list-style-type: none;
 }
 
+.section-list-item {
+  font-family: 'SF Display Medium', sans-serif;
+}
+
 .subtitle-scroll {
-  font-family: "SF Text Regular";
+  font-family: "SF Display Medium";
   font-size: 20px;
 }
 
 .urgent-text {
   display: inline-flex;
-  font-family: "SF Text Bold";
+  font-family: "SF Display Bold";
   font-size: 14px;
   color: #ff0800;
   font-weight: 600;
@@ -358,7 +374,7 @@ html {
 }
 
 .error-title {
-  font-family: "SF Text Medium";
+  font-family: "SF Display Medium";
   font-size: 60px;
   text-align: center;
   color: black;
