@@ -275,6 +275,14 @@ navlink {
   text-decoration: none;
 }
 
+body.dark .bigtitle-smalltext {
+  color: rgba(255, 255, 255, 0.87)
+}
+
+body.dark .subtitle-scroll {
+  color: rgba(255, 255, 255, 0.60)
+}
+
 .big-title {
   font-family: 'SF Display Bold', sans-serif;
   font-size: 70px;
