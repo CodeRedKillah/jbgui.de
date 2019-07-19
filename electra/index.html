@@ -139,7 +139,28 @@
 </nav>
 <hr class="navbar-hr">
 
-<body>
+<script src="../cookies.js"></script>
+
+<script>
+
+    function onload() {
+        var mode = getCookie('mode');
+        if(!mode) {
+            createCookie("mode", "light", 9999999);
+            var mode = getCookie('mode');
+        }
+
+        if(mode == "dark") {
+            document.querySelector('body').classList.add('dark')
+        } else {
+            document.querySelector('body').classList.remove('dark')
+        }
+
+    }
+
+</script>
+
+<body onload="onload()">
 
   <br>
 
