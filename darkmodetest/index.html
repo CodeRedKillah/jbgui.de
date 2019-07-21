@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Jailbreak Guides</title>
+    <link rel="shortcut icon" href="https://i.vgy.me/KY96Du.png">
+    <link rel="stylesheet" href="/css/mystyles.scss">
+    <link rel="stylesheet" type="text/css" href="css/articles.css">
+    <link rel="apple-touch-icon" href="https://i.vgy.me/IVzE8H.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Jailbreak Guides">
+    <meta property="og:description" content="Helpful, open source guides relating to iOS jailbreaking.">
+    <meta property="og:url" content="https://jbgui.de">
+    <meta property="og:image" content="https://i.vgy.me/IVzE8H.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://jbgui.de">
+            <img src="img/logo.png" width="240" height="29">
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://jbgui.de/unc0ver/">
+                unc0ver
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/chimera">
+                Chimera
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-item" href="https://jbgui.de/packagemanagers">
+                    Package Managers
+                </a>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="https://jbgui.de/electra">
+                        Electra
+                    </a>
+                    <a class="navbar-item" href="https://jbgui.de/apple-tv">
+                        Apple TV
+                      </a>
+                    <a class="navbar-item" href="https://jbgui.de/legacy">
+                        Legacy
+                    </a>
+                    <a class="navbar-item" href="https://jbgui.de/other">
+                        Other
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-end">
+        </div>
+</nav>
+<hr class="navbar-hr">
+
+<script src="cookies.js"></script>
+
+<script>
+
+    function onload() {
+        var mode = getCookie('mode');
+        if(!mode) {
+            createCookie("mode", "light", 9999999);
+            var mode = getCookie('mode');
+        }
+
+        if(mode == "dark") {
+            document.querySelector('body').classList.add('dark')
+        } else {
+            document.querySelector('body').classList.remove('dark')
+        }
+
+    }
+
+</script>
+
+<body onload="onload()">
+    <!-- Temporary header to share the site isn't completed! -->
+    <div id="top"
+        style="background-color: #d64646; float: center; align-content: center; text-align: center; height: 52px;">
+        <p id="construction">Site under construction. Check back later.</p>
+    </div>
+    <br>
+    <br>
+    <div>
+        <button onclick="setMode('light')">light me</button>
+        <button onclick="setMode('dark')">dark me</button>
+    </div>
+    <br>
+    <!-- Start here until we're finished 🤮-->
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+
+    });
+</script>
+
+<footer>
+    <hr class="navbar-footer">
+
+    <p align="center">Made with <i class="fas fa-heart" style="color: #e85369;"></i> by our contributors on <a
+            href="https://github.com/coderedkillah/jbgui.de">GitHub</a></p>
+    <p align="center"><a href="https://jbgui.de/about">About</a> - <a href="https://jbgui.de/docs">Docs</a> - <a
+            href="https://jbgui.de/donate">Donate</a></p>
+    <br>
+
+</footer>
+
+</html>

@@ -81,6 +81,18 @@
     })
   </script>
 
+  <script src="cookies.js"></script>
+  <script>
+    console.log(document.cookie)
+    if (getCookie("mode") === "dark") document.write("dark");
+  </script>
+
+  <script src="cookies.js"></script>
+
+  <script>
+    if (getCookie("mode") === "dark")
+  </script>
+
 </head>
 
 <body id="body" class="dark">
@@ -140,36 +152,16 @@
               title="Dark light">
             <span class="slider round"></span>
           </label>
-          <a class="re-align" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-          title="Dark light">Re-Align</a>
+          <a class="re-align"
+            onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+            title="Dark light">Re-Align</a>
         </div>
       </div>
       <div class="navbar-end">
       </div>
   </nav>
 
-  <script src="../cookies.js"></script>
-
-<script>
-
-    function onload() {
-        var mode = getCookie('mode');
-        if(!mode) {
-            createCookie("mode", "light", 9999999);
-            var mode = getCookie('mode');
-        }
-
-        if(mode == "dark") {
-            document.querySelector('body').classList.add('dark')
-        } else {
-            document.querySelector('body').classList.remove('dark')
-        }
-
-    }
-
-</script>
-
-  <body onload="onload()">
+  <body>
     <div id="top" style="float: center; align-content: center; text-align: center; height: 52px;">
       <p id="construction">Site under construction. Check back later.</p>
     </div>
@@ -346,7 +338,8 @@
           <br>
           <p class="notice-text"> <b>Note: This method only works when a signing service has a valid certificate.</b>
           </p>
-          <p style="display: inline;" class="tooltip" id="hint"><i class="far fa-question-circle"></i><span class="tooltiptext">Bruh!</span></p>
+          <p style="display: inline;" class="tooltip" id="hint"><i class="far fa-question-circle"></i><span
+              class="tooltiptext">Bruh!</span></p>
           <br>
           <br>
           <p class="article-text">
