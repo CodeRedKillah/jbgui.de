@@ -243,7 +243,7 @@ button {
 }
 
 #logo {
-  background: url("../img/logo-white.png") no-repeat;
+  background: url("../img/logos/logo-white.png") no-repeat;
   width: 244px;
   height: 29px;
   background-origin: inherit;
