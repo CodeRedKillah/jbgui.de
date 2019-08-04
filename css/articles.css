@@ -337,6 +337,10 @@ img:hover {
   margin-right: auto;
 }
 
+.footer-text {
+  color: rgba(255, 255, 255, 0.87);
+}
+
 .error-title {
   color: rgba(255, 255, 255, 0.87)
 }
