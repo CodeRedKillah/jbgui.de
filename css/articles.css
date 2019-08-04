@@ -93,6 +93,12 @@
 .article-subtitle {
   font-family: "SF Display Semibold", sans-serif;
   font-size: 35px;
+  padding-top: 70px;
+}
+
+.article-subtitle2 {
+  font-family: "SF Display Semibold", sans-serif;
+  font-size: 35px;
 }
 
 .article-subtitle-top {
@@ -306,10 +312,6 @@ img:hover {
 #about {
   padding-top: 140px;
   max-width: 75%;
-}
-
-.article-section {
-  padding-top: 70px;
 }
 
 #top {
