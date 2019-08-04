@@ -19,33 +19,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on('click', function (event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-  </script>
-
-  <script>
     document.addEventListener('DOMContentLoaded', () => {
 
       // Get all "navbar-burger" elements
@@ -136,11 +109,7 @@
       <p id="construction">Site under construction. Check back later.</p>
     </div>
     <br>
-    <br>
     <!-- Start here until we're finished 🤮-->
-    <br>
-    <br>
-    <br>
     <div class="article-container">
 
       <div class="article-top">
@@ -203,7 +172,7 @@
         </div>
       </div>
       <div class="article-maintext">
-        <div id="about" style="padding-top: 140px;">
+        <div id="about">
           <p class="article-subtitle">What is unc0ver?</p>
           <p class="urgent-text">unc0ver does not support A12 devices at this time.</p>
           <p style="display: inline;"><a href=""><i class="far fa-question-circle"></i></a></p>
@@ -225,16 +194,15 @@
             You can view the source code of unc0ver <a href="https://github.com/pwn20wndstuff/undecimus">here</a>.
           </p>
         </div>
-        <div id="compatible" style="padding-top: 140px;">
+        <div id="compatible" class="article-section">
           <p class="article-subtitle">Compatibility</p>
-          <br>
           <br>
           <p class="article-text">
             All devices except A12 Devices (iPhones XR, XS, XS Max and the 2018 iPad Pros) from iOS 11.0-12.1.2 are
             supported!
           </p>
         </div>
-        <div id="comparison" style="padding-top: 140px;">
+        <div id="comparison" class="article-section">
           <p class="article-subtitle">unc0ver or unc0ver dark?</p>
           <br>
           <p class="article-text">
@@ -247,14 +215,16 @@
               href="https://jbgui.de/sileo/">Sileo</a>,
             and allows you to change the look of your jailbreak application using a theme switcher, with preset
             options
-            (True Black, Dark Purple, and White).</p>
-          <br>
-          <p>unc0ver (original) does not offer support for Sileo, or application theming options provided by unc0ver
-            dark.</p>
-          <br>
-          <p>You can learn more about unc0ver dark <a href="dark.diatr.us">here</a>.</p>
+            (True Black, Dark Purple, and White).
+            <br>
+            <br>
+            Standard unc0ver does not offer support for Sileo or app themes.
+            <br>
+            <br>
+            You can learn more about unc0ver dark <a href="dark.diatr.us">here</a>.</p>
+
         </div>
-        <div id="install-pc" style="padding-top: 140px;">
+        <div id="install-pc" class="article-section">
           <p class="article-subtitle">Standard Installation</p>
           <br>
           <p class="article-text">
@@ -342,9 +312,10 @@
     <br>
     <br>
 
-      <a href="https://bulma.io">
-        <img class="bulma-promo" src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24" style="margin: auto;">
-      </a>
+    <a href="https://bulma.io">
+      <img class="bulma-promo" src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma"
+        width="128" height="24" style="margin: auto;">
+    </a>
 
   </footer>
 

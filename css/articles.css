@@ -91,7 +91,7 @@
 }
 
 .article-subtitle {
-  font-family: "SF Display Medium", sans-serif;
+  font-family: "SF Display Semibold", sans-serif;
   font-size: 35px;
 }
 
@@ -143,6 +143,7 @@ a {
 .article-container {
   max-width: 90%;
   margin: auto;
+  padding-top: 7%;
 }
 
 code {
@@ -294,15 +295,21 @@ img:hover {
 }
 
 .article-text {
-  color: rgba(255, 255, 255, 0.60)
+  color: rgba(255, 255, 255, 0.60);
+  font-size: 18px;
 }
 
-#article-regdist {
-  padding-top: 50px;
+.article-section {
+  max-width: 75%;
 }
 
-#article-first {
+#about {
   padding-top: 140px;
+  max-width: 75%;
+}
+
+.article-section {
+  padding-top: 70px;
 }
 
 #top {
