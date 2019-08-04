@@ -5,11 +5,10 @@
 <head>
   <title>unc0ver - Jailbreak Guides</title>
   <link rel="shortcut icon" href="https://i.vgy.me/KY96Du.png">
-  <link rel="stylesheet" type="text/css" href="../css/articles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="..css/mystyles.scss">
+  <link rel="stylesheet" type="text/css" href="../css/articles.css">
+  <link rel="stylesheet" type="text/css" href="../css/bulma.min.css">
   <link rel="apple-touch-icon" href="https://i.vgy.me/IVzE8H.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <meta property="og:type" content="profile">
@@ -74,32 +73,14 @@
     });
   </script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-      ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark'):
-        document.querySelector('body').classList.remove('dark')
-    })
-  </script>
-
-  <script src="cookies.js"></script>
-  <script>
-    console.log(document.cookie)
-    if (getCookie("mode") === "dark") document.write("dark");
-  </script>
-
-  <script src="cookies.js"></script>
-
-  <script>
-    if (getCookie("mode") === "dark")
-  </script>
-
 </head>
 
-<body id="body" class="dark">
+
+<body>
 
   <br>
 
-  <nav class="navbar is-fixed-top" aria-label="main navigation">
+  <nav class="navbar is-fixed-top is-transparent" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://jbgui.de">
         <div id="logo"></div>
@@ -145,17 +126,6 @@
             </a>
           </div>
         </div>
-        <div class="navbar-switch">
-          <label class="switch">
-            <input type="checkbox" id="togButton"
-              onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-              title="Dark light">
-            <span class="slider round"></span>
-          </label>
-          <a class="re-align"
-            onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-            title="Dark light">Re-Align</a>
-        </div>
       </div>
       <div class="navbar-end">
       </div>
@@ -177,7 +147,7 @@
 
         <div class="columns">
 
-          <div class="column">
+          <div class="column" id="intro-left">
 
             <div class="intro">
 
@@ -192,9 +162,8 @@
               </div>
               <br>
               <br>
-              <br>
               <div class="sections-list">
-                <p class="article-subtitle-top">Sections</p>
+                <p class="article-subtitle">Sections</p>
                 <ul>
 
                   <li><a class="section-list-item" href="#about">What is unc0ver?
@@ -214,6 +183,7 @@
 
                 </ul>
               </div>
+              <br>
               <br>
               <br>
               <div class="scroll-more">
@@ -338,8 +308,7 @@
           <br>
           <p class="notice-text"> <b>Note: This method only works when a signing service has a valid certificate.</b>
           </p>
-          <p style="display: inline;" class="tooltip" id="hint"><i class="far fa-question-circle"></i><span
-              class="tooltiptext">Bruh!</span></p>
+          <p style="display: inline;"><a href=""><i class="far fa-question-circle"></i></a></p>
           <br>
           <br>
           <p class="article-text">
@@ -372,6 +341,10 @@
         href="https://jbgui.de/donate">Donate</a></p>
     <br>
     <br>
+
+      <a href="https://bulma.io">
+        <img class="bulma-promo" src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="128" height="24" style="margin: auto;">
+      </a>
 
   </footer>
 

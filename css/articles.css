@@ -65,46 +65,37 @@
   src: url("https://sf.abarba.me/SF-UI-Display-Ultralight.otf");
 }
 
-navlink {
+#navlink {
   font-size: 25px;
   text-align: center;
   color: black;
   text-decoration: none;
 }
 
-body.dark .bigtitle-smalltext {
+.bigtitle-smalltext {
   color: rgba(255, 255, 255, 0.87)
 }
 
-body.dark .subtitle-scroll {
+.subtitle-scroll {
   color: rgba(255, 255, 255, 0.60)
 }
 
 .big-title {
   font-family: 'SF Display Bold', sans-serif;
   font-size: 70px;
-  color: black;
 }
 
 .big-title-subtitle {
   font-family: 'SF Display Medium', sans-serif;
   font-size: 20px;
-  color: #6b6b6b;
 }
 
 .article-subtitle {
   font-family: "SF Display Medium", sans-serif;
   font-size: 35px;
-  color: black;
 }
 
 .article-subtitle-top {
-  font-family: "SF Display Semibold", sans-serif;
-  font-size: 35px;
-  color: black;
-}
-
-body.dark .article-subtitle-top {
   font-family: "SF Display Semibold", sans-serif;
   font-size: 35px;
   color: rgba(255, 255, 255, 0.87);
@@ -134,7 +125,6 @@ body.dark .article-subtitle-top {
   display: inline-flex;
   font-family: "SF Display Bold";
   font-size: 14px;
-  color: #ff0800;
   font-weight: 600;
 }
 
@@ -142,8 +132,8 @@ body.dark .article-subtitle-top {
   display: inline;
 }
 
-.navbar-hr {
-  color: #dddddd;
+a {
+  color: #00818a;
 }
 
 .navbar-footer {
@@ -166,7 +156,6 @@ html {
 #construction {
   text-align: center;
   line-height: 52px;
-  color: white;
   font-size: 80%vw;
   float: center;
   white-space: nowrap;
@@ -207,17 +196,6 @@ html {
 .sadmac {
   height: 146.5px;
   width: 110px;
-  background: url("../img/sad-mac.jpg");
-  background-origin: inherit;
-  background-size: cover;
-  background-position: left;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body.dark .sadmac {
-  height: 146.5px;
-  width: 110px;
   background: url("../img/sad-mac-dark.png");
   background-origin: inherit;
   background-size: cover;
@@ -226,63 +204,38 @@ body.dark .sadmac {
   margin-right: auto;
 }
 
-body.dark code[class*=language-],
-body.dark table tbody>tr:nth-child(odd)>td,
-body.dark table tbody>tr:nth-child(odd)>th {
-  background: #121212;
-  color: rgba(255, 255, 255, 0.87);
-}
-
 body {
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-body.dark {
-  background-color: #121212;
+  background-color: #172029;
   color: rgba(255, 255, 255, 0.87);
-  -webkit-transition: .2s;
-  transition: .2s;
 }
 
-body.dark a {
-  color: #72b2fd;
+a {
+  color: #00818a;
 }
 
 
-body.dark button {
+button {
   background-color: #eee;
   color: #111;
 }
 
-body.dark .article-subtitle {
+.article-subtitle {
   color: rgba(255, 255, 255, 0.87);
 }
 
-body.dark .big-title {
+.big-title {
   color: rgba(255, 255, 255, 0.87);
 }
 
-body.dark .big-title-subtitle {
+.big-title-subtitle {
   color: rgba(255, 255, 255, 0.60);
 }
 
-body.dark .urgent-text {
+.urgent-text {
   color: #ff6b66;
 }
 
-.navbar {
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-body.dark .navbar {
-  background-color: #121212;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-body.dark #logo {
+#logo {
   background: url("../img/logo-white.png") no-repeat;
   width: 244px;
   height: 29px;
@@ -291,97 +244,56 @@ body.dark #logo {
   background-position: left;
 }
 
-#logo {
-  background: url("../img/logo.png") no-repeat;
-  width: 244px;
-  height: 29px;
-  background-origin: inherit;
-  background-size: cover;
-  background-position: left;
-}
-
-body.dark .navbar-item {
+.navbar-link {
   color: rgba(255, 255, 255, 0.60);
 }
 
-body.dark .navbar-link {
-  color: rgba(255, 255, 255, 0.60);
-}
-
-body.dark .navbar-dropdown {
-  background-color: #121212;
+.navbar-dropdown {
+  background-color: #172029;
   color: rgba(255, 255, 255, 0.87);
 }
 
-body.dark .navbar-menu {
+.navbar-menu {
   color: rgba(255, 255, 255, 0.87);
-  -webkit-transition: .2s;
-  transition: .2s;
 }
 
-.navbar-start {
-  -webkit-transition: .2s;
-  transition: .2s;
+#navbarBasicExample {
+  background-color: #172029;
+  color: rgba(255, 255, 255, 0.87);
 }
 
 .navbar-item {
-  -webkit-transition: .2s;
-  transition: .2s;
+  background-color: #172029;
+  color: rgba(255, 255, 255, 0.87)
 }
 
-body.dark .navbar-item {
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-body.dark nav {
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-nav {
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-body.dark #navbar-basic-example {
-  background-color: #121212;
+.navbar-brand {
+  background-color: #172029;
   color: rgba(255, 255, 255, 0.87);
-  -webkit-transition: .2s;
-  transition: .2s;
 }
 
-body.dark .navbar {
-  background-color: #121212;
-}
-
-#navbar-basic-example {
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-body.dark .navbar-link:not(.is-arrowless)::after {
+.navbar-link:not(.is-arrowless)::after {
   color: #72b2fd;
   margin-top: -.375em;
   right: 1.125em;
 }
 
-body.dark .navbar-link:not(.is-arrowless)::after {
+.navbar-link:not(.is-arrowless)::after {
   border-color: #72b2fd;
   margin-top: -.375em;
   right: 1.125em;
 }
 
-body.dark img {
+img {
   opacity: .75;
   transition: opacity .4s ease-in-out;
 }
 
-body.dark img:hover {
+img:hover {
   opacity: 1;
 }
 
-body.dark .article-text {
+.article-text {
   color: rgba(255, 255, 255, 0.60)
 }
 
@@ -395,141 +307,21 @@ body.dark .article-text {
 
 #top {
   z-index: 1;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-body.dark #top {
-  background-color: #761A2F;
-  -webkit-transition: .2s;
-  transition: .2s;
 }
 
 #top {
-  background-color: #d64646;
-}
-
-body.dark #construction {
-  color: rgba(255, 255, 255, 0.87);
+  background-color: #761A2F;
 }
 
 #construction {
-  color: white;
+  color: rgba(255, 255, 255, 0.87);
 }
 
- .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+.navbar {
+  background-color: #172029;
 }
 
-body.dark .navbar-item {
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-body.dark #navbarBasicExample {
-  background-color: rgba(255,255,255,0);
-  -webkit-transition: .2s;
-  transition: .2s;
-}
- 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-  
-}
- 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  border: 2px black solid;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-body.dark .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #121212;
-  border: 2px white solid;
-  -webkit-transition: .2s;
-  transition: .2s;
-  opacity: 0.86;
-}
- 
-body.dark .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background: url("../img/dnd.png") no-repeat;
-  background-size: contain;
-  vertical-align: middle;
-  -webkit-transition: .2s;
-  transition: .2s;
-  opacity: 0.86;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background: url("../img/sunglyph.png") no-repeat;
-  background-size: contain;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
- 
-input:checked + .slider {
-  background-color: #121212;
-}
- 
-input:focus + .slider {
-  box-shadow: 0 0 1px #121212;
-}
- 
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
- 
-.slider.round {
-  border-radius: 34px;
-}
- 
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.navbar-switch {
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-}
-
-.re-align {
-  padding-left: 10px;
-}
-
-body.dark .navbar-footer {
+.navbar-footer {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -537,19 +329,19 @@ body.dark .navbar-footer {
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-body.dark .error-title {
+.error-title {
   color: rgba(255, 255, 255, 0.87)
 }
 
-body.dark .error-text {
+.error-text {
   color: rgba(255, 255, 255, 0.60)
 }
 
-body.dark .error-link {
+.error-link {
   color: #72b2fd;
 }
 
-body.dark .errorpage {
+.errorpage {
   background-color: #121212;
 }
 
@@ -557,8 +349,8 @@ html {
   background-color: white;
 }
 
-body.dark html {
-  background-color: #121212;
+html {
+  background-color: #182952;
 }
 
 .tooltip {
@@ -595,7 +387,8 @@ body.dark html {
   content: " ";
   position: absolute;
   top: 50%;
-  right: 100%; /* To the left of the tooltip */
+  right: 100%;
+  /* To the left of the tooltip */
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
