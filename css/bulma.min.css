@@ -4861,7 +4861,6 @@ fieldset[disabled] .textarea:-ms-input-placeholder {
 .is-inline.input,
 .is-inline.textarea {
     display: inline;
-    width: auto
 }
 
 .input.is-rounded {

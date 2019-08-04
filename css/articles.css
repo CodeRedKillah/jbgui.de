@@ -149,7 +149,7 @@ a {
 .article-container {
   max-width: 90%;
   margin: auto;
-  padding-top: 7%;
+  padding-top: 100px;
 }
 
 code {
