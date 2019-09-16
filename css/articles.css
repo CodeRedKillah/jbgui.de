@@ -233,6 +233,7 @@ button {
 
 .big-title {
   color: rgba(255, 255, 255, 0.87);
+  line-height: 1.2;
 }
 
 .big-title-subtitle {
