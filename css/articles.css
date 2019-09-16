@@ -158,6 +158,7 @@ code {
 
 html {
   scroll-behavior: smooth;
+  background-color:#172029;
 }
 
 #construction {
@@ -354,12 +355,9 @@ img:hover {
 }
 
 .errorpage {
-  background-color: #121212;
+  background-color: ##172029;
 }
 
-html {
-  background-color: white;
-}
 
 html {
   background-color: #182952;
